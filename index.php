@@ -6,7 +6,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     $uname = $_POST['username'];
     $upass = $_POST['password'];
 
-    $conn = new mysqli();
+    //$conn = new mysqli();
 
     $korisnik = new User(null, $uname, $upass);
     //staticka f-ja preko klase -> $odg = User :: logInUser($uname,$upass,$conn);
